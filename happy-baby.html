@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>CloudRui | 快乐宝贝</title>
+
+<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+
+<link href="http://libs.baidu.com/bootstrap/2.3.2/css/bootstrap.css" rel="stylesheet">
+<script src="http://libs.baidu.com/bootstrap/2.3.2/js/bootstrap.js"></script>
+
+<link href="css/custom.css" rel="stylesheet">
+
+<script type="text/javascript">
+$(document).ready(function() {
+	$("img.download-button").each(function() {
+		var name = $(this).attr("name");
+		if (name != null) {		
+			$(this).mouseenter(function(){
+				$(this).attr("src", "images/button/" + name + "_black.png");
+			});
+			$(this).mouseout(function(){
+				$(this).attr("src", "images/button/" + name + "_white.png");
+			});
+		}
+	});
+});
+</script>
+
+</head>
+
+<body>
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a class="logo" href="http://www.cloudrui.com"><img src="images/logo_48.png"></a>
+				<nav>
+					<ul class="nav pull-right" style="padding-top:3px">
+						<li><a href="index.html">首页</a></li>
+						<li><a href="product.html">产品</a></li>
+						<li class="active"><a href="happy-baby.html">快乐宝贝</a></li>
+						<li><a href="about.html">关于我们</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+
+	<div class="row bg-blue">
+		<img src="images/happy-baby/1.png">
+		<div class="container">
+			<a href="#"><img name="Android" class="download-button" src="images/button/Android_white.png"></a>
+			<a href="http://longrm.github.io/download/happy-baby_TV.apk" target="_blank"><img name="TV" class="download-button" src="images/button/TV_white.png"></a>
+			<!-- <img class="download-button" src="images/happy-baby/icon.png"> -->
+		</div>
+		<img src="images/happy-baby/2.png">
+		<img src="images/happy-baby/3.png">
+		<img src="images/happy-baby/4.png">
+	</div>
+
+	<div class="container">
+		<div class="footer">
+			<div id="copyright">
+				Copyright © 2013-2014 <strong><a href="http://www.cloudrui.com">cloudrui.com</a></strong> by <strong>星火瑞云</strong>. All Rights Reserved.
+				<p><a href="http://www.miitbeian.gov.cn/">京ICP备14039276号</a></p>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
