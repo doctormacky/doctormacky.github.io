@@ -17,3 +17,6 @@ urls.txt
 
 # mac
 .DS_Store
+/.idea/doctormacky.github.io.iml
+/.idea/misc.xml
+/.idea/modules.xml
