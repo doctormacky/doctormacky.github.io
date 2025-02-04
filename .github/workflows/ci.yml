@@ -28,7 +28,8 @@ jobs:
         run: |
           remote_addr=`git remote get-url --push origin`
           commit_info=`git describe --all --always --long`
-          user_name=`git log -1 --pretty=format:'%an'`
+#          #user_name=`git log -1 --pretty=format:'%an'`
+          user_name=`doctormacky`
           user_email=`git log -1 --pretty=format:'%ae'`
           deploy_branch=gh-pages
           yarn
