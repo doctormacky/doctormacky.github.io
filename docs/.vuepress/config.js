@@ -4,6 +4,7 @@ const htmlModules = require('./config/htmlModules.js');
 
 module.exports = {
   theme: 'vdoing', // 使用依赖包主题
+  base: '/vuepress-theme-vdoing-doc/',
   // theme: require.resolve('../../vdoing'), // 使用本地主题 (先将vdoing主题文件下载到本地：https://github.com/xugaoyi/vuepress-theme-vdoing)
   title: "vuepress-theme-vdoing",
   description: '一个基于VuePress的 知识管理&博客 主题',
