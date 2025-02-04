@@ -8,10 +8,10 @@ cd docs/.vuepress/dist # 进入生成的文件夹
 ##echo 'macky.com' > CNAME
 if [ -z "$GITHUB_TOKEN" ]; then
   msg='deploy'
-  githubUrl=git@github.com:doctormacky/vuepress-theme-vdoing-doc.git
+  githubUrl=git@github.com:doctormacky/doctormacky.github.io.git
 else
   msg='来自github action的自动部署'
-  githubUrl=https://doctormacky:${GITHUB_TOKEN}@github.com/doctormacky/vuepress-theme-vdoing-doc.git
+  githubUrl=https://doctormacky:${GITHUB_TOKEN}@github.com/doctormacky/doctormacky.github.io.git
   git config --global user.name "Doctormacky"
   git config --global user.email "liuyun105@126.com"
 fi
