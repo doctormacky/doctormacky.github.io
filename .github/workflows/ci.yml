@@ -12,7 +12,6 @@ jobs: # 工作流
     strategy:
       matrix:
         node-version: [18.x]
-        #node-version: [10.x]
 
     steps:
       - name: Checkout # 步骤1
@@ -21,6 +20,10 @@ jobs: # 工作流
         uses: actions/setup-node@v1 # 作用：安装nodejs
         with:
           node-version: ${{ matrix.node-version }} # 版本
+      - name: Set Git identity
+        run: |
+          git config --global user.email "liuyun105@126.com"
+          git config --global user.name "Doctormacky"
       - name: run deploy.sh # 步骤3 （同时部署到github和coding）
         env: # 设置环境变量
           GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }} # toKen私密变量
