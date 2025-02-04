@@ -104,12 +104,12 @@ module.exports = {
         {
           iconClass: 'icon-youjian',
           title: '发邮件',
-          link: 'mailto:894072666@qq.com'
+          link: 'mailto:liuyun105@126.com'
         },
         {
           iconClass: 'icon-github',
           title: 'GitHub',
-          link: 'https://github.com/xugaoyi'
+          link: 'https://github.com/doctormacky'
         },
         {
           iconClass: 'icon-erji',
@@ -119,8 +119,8 @@ module.exports = {
       ]
     },
     footer: { // 页脚信息
-      createYear: 2019, // 博客创建年份
-      copyrightInfo: 'Evan Xu | MIT License', // 博客版权信息，支持a标签
+      createYear: 2025, // 博客创建年份
+      copyrightInfo: 'Doctormacky | MIT License', // 博客版权信息，支持a标签
     },
     htmlModules,
   },
